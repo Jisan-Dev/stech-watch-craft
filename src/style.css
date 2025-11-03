@@ -114,6 +114,15 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+.particleCta {
+  position: absolute;
+  border-radius: 50%;
+  background: hsl(var(--primary-glow));
+  /* background: linear-gradient(135deg, #ff6b35, #00b8a9); */
+  filter: blur(4px);
+  animation: float 3s ease-in-out infinite;
+}
+
 @keyframes float {
   0%,
   100% {

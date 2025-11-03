@@ -1,3 +1,4 @@
+import { particleCta } from "./particles-cta";
 import "./style.css";
 import { initReviewsSlider } from "./swiper";
 
@@ -131,7 +132,7 @@ function initEventCollection() {
   events.forEach((event, index) => {
     const card = document.createElement("div");
     card.className =
-      "group relative rounded-3xl overflow-hidden border-2 transition-all duration-300 h-[320px] flex items-end";
+      "group relative rounded-3xl overflow-hidden border-2 transition-all duration-300 h-[430px] flex items-end";
     // card.style.borderColor = `#00B8A9`;
     card.style.backgroundImage = `url(${event.imageUrl})`;
     card.style.backgroundSize = "cover";
@@ -145,16 +146,16 @@ function initEventCollection() {
           <!-- Content -->
           <div class="relative z-10 p-8 flex items-center justify-between w-full">
             <div class="flex-1">
-              <h3 class="text-3xl font-bold text-white mb-2">
+              <h3 class="text-5xl font-bold text-white mb-2">
                 ${event.title}
               </h3>
-              <p class="text-white/80 text-sm">
+              <p class="text-white/70 text-2xl">
                 ${event.subtitle}
               </p>
             </div>
 
             <!-- CTA Button -->
-            <button class="bg-primary hover:bg-primary-glow text-white font-semibold px-8 py-2 text-2xl shadow-xl rounded-lg transition-all duration-300">
+            <button class="bg-primary hover:bg-primary-glow text-black rounded-full font-medium px-8 py-3 text-3xl shadow-xl transition-all duration-300 cursor-pointer">
               Try Now
             </button>
           </div>
@@ -182,4 +183,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initFeatures();
   initEventCollection();
   initReviewsSlider();
+  particleCta();
 });
