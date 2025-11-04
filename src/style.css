@@ -198,3 +198,21 @@ body {
 .swiper-pagination-bullet-active {
   background: #00b8a9;
 }
+
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 1000;
+}

@@ -1,4 +1,5 @@
 import { particleCta } from "./particles-cta";
+import { preloader } from "./preloader";
 import "./style.css";
 import { initReviewsSlider } from "./swiper";
 
@@ -180,6 +181,7 @@ function initEventCollection() {
 
 // Initialize on DOM load
 document.addEventListener("DOMContentLoaded", () => {
+  preloader();
   initParticles();
   initSeriesBadges();
   initFeatures();
