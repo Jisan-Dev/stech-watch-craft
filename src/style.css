@@ -5,6 +5,7 @@
 
 .font-afacad {
   font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .font-lobster {
