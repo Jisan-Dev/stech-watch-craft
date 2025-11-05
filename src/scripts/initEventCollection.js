@@ -5,19 +5,19 @@ export function initEventCollection() {
       title: "Halloween Collection",
       subtitle: "Exclusive event collection",
       theme: "halloween",
-      imageUrl: "/event1.jpg",
+      imageUrl: "/event1.webp",
     },
     {
       title: "Thanksgiving Day",
       subtitle: "Exclusive event collection",
       theme: "thanksgiving",
-      imageUrl: "/event2.png",
+      imageUrl: "/event2.webp",
     },
     {
       title: "Christmas Eve",
       subtitle: "Exclusive event collection",
       theme: "christmas",
-      imageUrl: "/event3.png",
+      imageUrl: "/event3.webp",
     },
   ];
 
