@@ -216,3 +216,92 @@ body {
   transition: opacity 0.75s, visibility 0.75s;
   z-index: 1000;
 }
+
+/* FAQ sec */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(38, 166, 154, 0.1);
+}
+@media (max-width: 600px) {
+  .faq-question:hover {
+    background: rgba(38, 166, 153, 0);
+  }
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+}
+
+.faq-answer.active {
+  max-height: 1000px;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-icon.active {
+  transform: rotate(180deg);
+}
+
+/* privacy */
+.toc-link {
+  transition: all 0.3s ease;
+  color: hsl(var(--muted-foreground));
+  text-decoration: underline;
+}
+
+.toc-link:hover {
+  color: hsl(var(--primary));
+}
+.toc-link.active {
+  color: hsl(var(--primary));
+  padding-left: 0.75rem;
+}
+
+.sticky-toc {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  align-self: flex-start;
+}
+
+/* Custom scrollbar for TOC */
+.sticky-toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sticky-toc::-webkit-scrollbar-track {
+  background: rgba(38, 166, 154, 0.1);
+}
+
+.sticky-toc::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 221px;
+  height: 962px;
+  /* left: calc(50% - 221px / 2 - 470.5px); */
+
+  background: linear-gradient(180deg, #00b8a9 0%, #ff6b35 100%);
+  filter: blur(90px);
+  transform: rotate(90deg);
+  z-index: -1;
+}
